@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Title</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+ <body>
+	<div class = 'playPole'>
+		<canvas id="canvas" width="410" height="410"></canvas>
+		<div class='gameInfo'> 
+			<div class = 'heart'>
+				<img src = 'images/heart.png' > <span id='heart'> 1 </span>
+			</div>
+			<div class = 'level'>
+				Level <span id='level'>  1 </span>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="controlBtn">
+		<input id="boardLeft" type="button" value="Left" name="e">
+		<input id="boardRight" type="button" value="Right" name="e">
+	</div>
+	
+	<div class="menu">
+		<h1> Tennis </h1>
+		<h3>Выберите сложность</h3>
+		<select name = 'levelSelect' id='levelSelect'>
+			 <option>Easy</option>
+			 <option>Normal</option>
+			 <option>Hard</option>
+		</select>
+		<div>
+			<button class='startBtn'> Start </button>
+		</div>
+	</div>
+	
+	<div class="restart">
+		<button class='restartBtn'> Continue </button>
+		<button class='complete'> Stop and Menu </button>
+	</div>
+	
+	<div class="nextLevel">
+		<h3>Level complete</h3>
+		<button id = 'nextLevelBtn'> Next level </button>
+		<button class='complete' id='completeBtn'> Stop and Menu </button>
+	</div>
+	
+	
+	
+	<script type="text/javascript" src="jQuery/jquery-3.5.1.min.js"></script>
+	<script src="app.js"></script>
+	<script src="levelSetting.js"></script>
+	<script src="eventHandlers.js"></script>
+	
+	
+	
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
